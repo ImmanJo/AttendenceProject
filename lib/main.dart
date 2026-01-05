@@ -1,5 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:loginpage/features/BotNavBar.dart';
+import 'package:loginpage/features/homeWork/Presentaion/pages/HomeWorkPage.dart';
 import 'package:loginpage/features/login_screen/Data/Logic/AuthRemoteDataSource.dart';
 import 'package:loginpage/features/login_screen/Data/Repository/RepoImpl.dart';
 import 'package:loginpage/features/login_screen/Domain/Usecases/GoogleSIgninUsecase.dart';
@@ -51,7 +53,10 @@ class MyApp extends StatelessWidget {
         AppRoutes.home: (context) => HomePage(),
         AppRoutes.reset: (context) => ResetScreen(),
         AppRoutes.editpage: (context) => EditPage(),
+
         // AppRoutes.studentform: (context) => Studentform(),
+        AppRoutes.homework: (context) => Homeworkpage(),
+        AppRoutes.botNavBar: (context) => MyBotNavBar(),
       },
     );
   }
@@ -65,4 +70,6 @@ class AppRoutes {
   static const String reset = '/reset';
   static const String editpage = '/editpage';
   static const String studentform = '/studentform';
+  static const String homework = '/homework';
+  static const String botNavBar = '/botNav';
 }

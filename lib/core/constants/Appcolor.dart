@@ -10,7 +10,7 @@ class Appcolor {
   static Color whiteColor = const Color.fromARGB(255, 245, 243, 243);
 
   // ===== RED THEME =====
-  static const redPrimary = Color.fromARGB(255, 238, 90, 79);
+  static const redPrimary = Color.fromARGB(255, 255, 93, 81);
   static const redBackground = Color.fromARGB(255, 255, 235, 235);
   static const redCard = Color.fromARGB(255, 255, 210, 210);
   static const redAccent = Color.fromARGB(255, 255, 150, 140);

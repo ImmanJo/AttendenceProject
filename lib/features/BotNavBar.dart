@@ -23,7 +23,17 @@ class _MyBotNavBarState extends State<MyBotNavBar> {
             _currentIndex = index;
           });
         },
-        items: [],
+        items: [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home_rounded),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.library_books_outlined),
+            label: 'ClassRoom',
+          ),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Profile'),
+        ],
       ),
     );
   }
